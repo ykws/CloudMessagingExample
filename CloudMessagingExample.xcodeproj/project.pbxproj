@@ -16,6 +16,7 @@
 		0852DFCE2775F4950044AFDC /* CloudMessagingExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0852DFCD2775F4950044AFDC /* CloudMessagingExampleTests.swift */; };
 		0852DFD82775F4950044AFDC /* CloudMessagingExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0852DFD72775F4950044AFDC /* CloudMessagingExampleUITests.swift */; };
 		0852DFDA2775F4950044AFDC /* CloudMessagingExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0852DFD92775F4950044AFDC /* CloudMessagingExampleUITestsLaunchTests.swift */; };
+		0852DFE72775FF2D0044AFDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0852DFE62775FF2D0044AFDC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0852DFD32775F4950044AFDC /* CloudMessagingExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudMessagingExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0852DFD72775F4950044AFDC /* CloudMessagingExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudMessagingExampleUITests.swift; sourceTree = "<group>"; };
 		0852DFD92775F4950044AFDC /* CloudMessagingExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudMessagingExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0852DFE62775FF2D0044AFDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0852DFBF2775F4950044AFDC /* Assets.xcassets */,
 				0852DFC12775F4950044AFDC /* LaunchScreen.storyboard */,
 				0852DFC42775F4950044AFDC /* Info.plist */,
+				0852DFE62775FF2D0044AFDC /* GoogleService-Info.plist */,
 			);
 			path = CloudMessagingExample;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0852DFC32775F4950044AFDC /* LaunchScreen.storyboard in Resources */,
+				0852DFE72775FF2D0044AFDC /* GoogleService-Info.plist in Resources */,
 				0852DFC02775F4950044AFDC /* Assets.xcassets in Resources */,
 				0852DFBE2775F4930044AFDC /* Main.storyboard in Resources */,
 			);
