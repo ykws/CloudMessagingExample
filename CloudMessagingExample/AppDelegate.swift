@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import UserNotifications
+
 import Firebase
 
 @main
@@ -15,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        
+        // リモート通知に登録する
+        UNUserNotificationCenter.current().delegate = self
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { _, _ in })
+        application.registerForRemoteNotifications()
+
         return true
     }
 
@@ -33,5 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+// MARK: - User Notification Center Delegate
+
+extension AppDelegate : UNUserNotificationCenterDelegate {
+    
 }
 
