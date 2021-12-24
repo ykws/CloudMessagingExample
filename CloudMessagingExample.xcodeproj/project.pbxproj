@@ -53,6 +53,7 @@
 		0852DFD72775F4950044AFDC /* CloudMessagingExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudMessagingExampleUITests.swift; sourceTree = "<group>"; };
 		0852DFD92775F4950044AFDC /* CloudMessagingExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudMessagingExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0852DFE62775FF2D0044AFDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0852DFED27768F730044AFDC /* CloudMessagingExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudMessagingExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		0852DFB52775F4930044AFDC /* CloudMessagingExample */ = {
 			isa = PBXGroup;
 			children = (
+				0852DFED27768F730044AFDC /* CloudMessagingExample.entitlements */,
 				0852DFB62775F4930044AFDC /* AppDelegate.swift */,
 				0852DFB82775F4930044AFDC /* SceneDelegate.swift */,
 				0852DFBA2775F4930044AFDC /* ViewController.swift */,
@@ -452,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudMessagingExample/CloudMessagingExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NYT8BVWJBJ;
@@ -480,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudMessagingExample/CloudMessagingExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NYT8BVWJBJ;
