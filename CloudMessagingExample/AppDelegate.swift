@@ -23,6 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { _, _ in })
         application.registerForRemoteNotifications()
 
+        // 登録トークンを受信する
+        Messaging.messaging().delegate = self
+        Messaging.messaging().token { token, error in
+            if let error = error {
+                print("Error fetching FCM registration token: \(error)")
+            } else if let token = token {
+                print("FCM registration token: \(token)")
+            }
+        }
+
         return true
     }
 
@@ -49,3 +59,8 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
     
 }
 
+// MARK: - Messaging Delegate
+
+extension AppDelegate : MessagingDelegate {
+    
+}
