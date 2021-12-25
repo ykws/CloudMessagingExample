@@ -56,7 +56,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // MARK: - User Notification Center Delegate
 
 extension AppDelegate : UNUserNotificationCenterDelegate {
-    
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        let userInfo = notification.request.content.userInfo
+        
+        print(userInfo)
+        
+        // リストとバナーでディスプレイに表示する
+        //
+        // iOS14からアラートがリストとバナーに分かれた
+        // https://developer.apple.com/documentation/usernotifications/unnotificationpresentationoptions/1649506-alert
+        //
+        completionHandler([[.list, .banner, .sound]])
+    }
+
 }
 
 // MARK: - Messaging Delegate
