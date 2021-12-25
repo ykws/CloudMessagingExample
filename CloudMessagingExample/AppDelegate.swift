@@ -70,6 +70,16 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         completionHandler([[.list, .banner, .sound]])
     }
 
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        
+        // TODO: 通知をタップした時の処理を書く
+        
+        print(userInfo)
+        
+        completionHandler()
+    }
+
 }
 
 // MARK: - Messaging Delegate
